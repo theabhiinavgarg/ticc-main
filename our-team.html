@@ -5,6 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Custom CSS-->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/tailwindcss">
+        @layer components {
+
+          .card {
+            @apply flex items-center justify-center flex-col gap-2 p-5 w-full sm:w-72 h-full bg-gray-100 border rounded-2xl
+          }
+
+        }
+    </style>
+    <!--Tailwind CSS-->
+
+    <!--Font-Awesome-->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -12,6 +35,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="our-team.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
     <title>Our-Team</title>
 </head>
 
@@ -47,18 +71,83 @@
             <a href="https://bit.ly/tietticc"></a><button>Book a Session</button>
         </div>
     </nav>
+    <div class="container mx-auto py-8">
 
-    <div class="navigations">
-        <div id="our-counc">OUR COUNSELLORS</div>
-        <div id="counsellors">
+        
+        <div class="navigations">
+            <div id="our-counc">OUR COUNSELLORS</div>
+            <div id="counsellors">
+                <div class="flex flex-col text-center gap-4 mb-8 p-4">
+        
+                    <!-- <div class="text-purple-600 text-sm font-bold">Our team</div> -->
+        
+                    <div class="text-gray-900 text-3xl md:text-4xl font-bold"></div>
+        
+                    <div class="text-gray-600 md:text-lg">Sometimes coping with one or more stresses can prove to be overwhelming. TICC is here for you through difficult times. Against this background, Thapar Institute Counselling cell (TICC) was set up in January 2016. TICC has formed in accordance with UGC norms to provide free counselling to students and staff to help them in performing better in their lives. </div>
+        
+                </div>
 
             <div class="logoCounc"><img src="assets/logo.png"></div>
             <div class="arrow"><img src="assets/arrow.png"></div>
+            <div>
 
-            <div class="out-box">
-                <div id="carousel1" class="carousel slide slider" data-interval="false">
-                    <div class="carousel-inner">
-                        <!-- sonam mam -->
+            <!-- <div class="out-box"> -->
+                <div class="flex items-center justify-center flex-wrap gap-4 p-4">
+
+                    <div class="card">
+        
+                        <img src="./assets/Sonam_mam.png" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+        
+                        <div class="text-gray-900 text-lg font-bold">Dr. Sonam Dullat</div>
+        
+                        <div class="text-purple-600">Psychologist and Therapist</div>
+                        
+                        <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                        
+                        <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                            <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                            <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                            <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                        </div>
+        
+                    </div>
+                <!-- <div id="carousel1" class="carousel slide slider" data-interval="false"> -->
+                    <div class="card color-black ">
+
+                        <img src="./assets/Garima_mam.png" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+        
+                        <div class="text-gray-900 text-lg font-bold">Dr. Garima Garg</div>
+                        <div class="text-purple-600">Ambassador Head</div>
+                        
+                        <!-- <div class="text-gray-600">Lead engineering teams at Figma, Pitch, and Protocol Labs.</div> -->
+                        
+                        <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                            <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                            <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                            <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                        </div>
+        
+                    </div>
+
+                    <!-- <div class="card color-black ">
+
+                        <img src="./assets/Sonam_mam.png" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+        
+                        <div class="text-gray-900 text-lg font-bold">Dr. Sonam Dullat</div>
+        
+                        <div class="text-purple-600">Engineering Manager</div>
+                        
+                        <div class="text-gray-600">Lead engineering teams at Figma, Pitch, and Protocol Labs.</div>
+                        
+                        <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                            <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                            <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                            <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                        </div>
+        
+                    </div> -->
+                    <!-- sonam mam -->
+                    <!-- <div class="carousel-inner">
                         <div class="carousel-item active container-fluid">
                             <div class="image">
                                 <img src="./assets/Sonam_mam.png">
@@ -81,7 +170,6 @@
 
 
 
-                        <!-- garima mam -->
                         <div class="carousel-item container-fluid">
                             <div class="image">
                                 <img src="./assets/Garima_mam.png">
@@ -101,53 +189,445 @@
                                 help them in performing better in their lives.
                             </div>
                         </div>
-
-                    </div>
+                        
+                    </div> -->
+                    <!-- garima mam -->
                 </div>
             </div>
             <!-- button -->
-            <a class="carousel-control-prev" href="#carousel1" role="button" data-bs-slide="prev">
+            <!-- <a class="carousel-control-prev" href="#carousel1" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
             <a class="carousel-control-next" href="#carousel1" role="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
-            </a>
+            </a> -->
 
-        </div>
+            </div>
+        <!-- </div> -->
 
 
 
 
         <div id="stu-amb">STUDENT AMBASSADORS</div>
         <div id="ambassadors" class="toggle">
+            <div class="flex flex-col text-center gap-4 mb-8 p-4">
+            <div class="text-gray-900 text-3xl md:text-4xl font-bold"></div>
+        
+                    <div class="text-gray-600 md:text-lg"> Student Ambassadors of TICC are responsible for
+                        bridging the gap between the counsellors and the students.
+                        It is a team of 50 members. <br> The student ambassadors spread awareness.</div>
 
-            <div class="description">
+            <!-- <div class="description">
                 Student Ambassadors of TICC are responsible for
                 bridging the gap between the counsellors and the students.
                 It is a team of 50 members. The student ambassadors spread awareness.
-            </div>
+            </div> -->
+
+            <section>
+                <div>
+
+                    <!-- <div class="out-box"> -->
+                        <div class="flex items-center justify-center flex-wrap gap-4 p-4">
+        
+                            <div class="card">
+                
+                                <img src="./assets/heads/Aashutosh.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                
+                                <div class="text-gray-900 text-lg font-bold"> Aashutosh Dubey</div>
+                
+                                <div class="text-purple-600">Lead Ambassador</div>
+                                
+                                <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                                
+                                <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                    <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                </div>
+                
+                            </div>
+                        <!-- <div id="carousel1" class="carousel slide slider" data-interval="false"> -->
+                            <div class="card color-black ">
+        
+                                <img src="./assets/heads/Gurleen.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                
+                                <div class="text-gray-900 text-lg font-bold">Gurleen Bajwa</div>
+                                <div class="text-purple-600">Vice Lead Ambassador</div>
+                                
+                                <!-- <div class="text-gray-600">Lead engineering teams at Figma, Pitch, and Protocol Labs.</div> -->
+                                
+                                <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                    <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                </div>
+                
+                            </div> 
+
+                            <div class="flex items-center justify-center flex-wrap gap-4 p-4">
+
+                                <div class="card">
+        
+                    
+                                    <img src="./assets/heads/Abhinav.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                    
+                                    <div class="text-gray-900 text-lg font-bold"> Abhinav Garg</div>
+                    
+                                    <div class="text-purple-600">Technical Head</div>
+                                    
+                                    <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                    
+                                </div>
+                                <div class="card">
+        
+                    
+                                    <img src="./assets/heads/Maanya.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                    
+                                    <div class="text-gray-900 text-lg font-bold"> Maanya Duggal</div>
+                    
+                                    <div class="text-purple-600">Social Media Head</div>
+                                    
+                                    <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                    
+                                </div>
+
+                                <div class="card">
+        
+                    
+                                    <img src="./assets/heads/Saranya.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                    
+                                    <div class="text-gray-900 text-lg font-bold"> Saranya Agarwal</div>
+                    
+                                    <div class="text-purple-600">Social Media Head</div>
+                                    
+                                    <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                    
+                                </div>
+
+                                <div class="card">
+        
+                    
+                                    <img src="./assets/heads/Aenika.PNG" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                    
+                                    <div class="text-gray-900 text-lg font-bold">  Aenika Sharma</div>
+                    
+                                    <div class="text-purple-600">Magazine Head</div>
+                                    
+                                    <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                    
+                                </div>
+
+                                <div class="card">
+        
+                    
+                                    <img src="./assets/heads/Sezalpreet.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                    
+                                    <div class="text-gray-900 text-lg font-bold"> Sezalpreet Kaur</div>
+                    
+                                    <div class="text-purple-600">Magazine Head</div>
+                                    
+                                    <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                    
+                                </div>
+
+                                <div class="card">
+        
+                    
+                                    <img src="./assets/heads/Pranathi.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                    
+                                    <div class="text-gray-900 text-lg font-bold">  Pranathi</div>
+                    
+                                    <div class="text-purple-600">Research and Advocacy Head</div>
+                                    
+                                    <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                    
+                                </div>
+
+                                <div class="card">
+        
+                    
+                                    <img src="./assets/heads/Nitin.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                    
+                                    <div class="text-gray-900 text-lg font-bold">  Nitin Sehgal</div>
+                    
+                                    <div class="text-purple-600">Research and Advocacy Head</div>
+                                    
+                                    <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                    
+                                </div>
+
+                                <div class="card">
+        
+                    
+                                    <img src="./assets/heads/Uday.png" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                    
+                                    <div class="text-gray-900 text-lg font-bold"> Uday Lomesh</div>
+                    
+                                    <div class="text-purple-600">Content Head</div>
+                                    
+                                    <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                    
+                                </div>
 
 
-            <section class="main">
+                                <div class="card">
+        
+                    
+                                    <img src="./assets/heads/Adamay.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                    
+                                    <div class="text-gray-900 text-lg font-bold"> Admay Bhardwaj</div>
+                    
+                                    <div class="text-purple-600">Content Head</div>
+                                    
+                                    <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                    
+                                </div>
+
+                                <div class="card">
+        
+                    
+                                    <img src="./assets/heads/Rudhir.JPG" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                    
+                                    <div class="text-gray-900 text-lg font-bold">  Rudhir Pratap Singh</div>
+                    
+                                    <div class="text-purple-600">Design Head</div>
+                                    
+                                    <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                    
+                                </div>
+
+                                <div class="card">
+        
+                    
+                                    <img src="./assets/heads/Mannandeep.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                    
+                                    <div class="text-gray-900 text-lg font-bold">  Mannandeep Sondh</div>
+                    
+                                    <div class="text-purple-600">Design Head</div>
+                                    
+                                    <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                    
+                                </div>
+
+             
+
+                                
+
+
+                                
+
+        
+                            <!-- <div class="card color-black ">
+        
+                                <img src="./assets/Sonam_mam.png" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                
+                                <div class="text-gray-900 text-lg font-bold">Dr. Sonam Dullat</div>
+                
+                                <div class="text-purple-600">Engineering Manager</div>
+                                
+                                <div class="text-gray-600">Lead engineering teams at Figma, Pitch, and Protocol Labs.</div>
+                                
+                                <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                    <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                </div>
+                
+                            </div> -->
+                            <!-- sonam mam -->
+                            <!-- <div class="carousel-inner">
+                                <div class="carousel-item active container-fluid">
+                                    <div class="image">
+                                        <img src="./assets/Sonam_mam.png">
+                                        <div class="rectangle">
+                                            <p class="name">Dr.Sonam Dullat</p>
+                                            <p class="dept">Psychologist and Therapist</p>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Sometimes coping with one or more stresses can prove to be overwhelming. TICC is
+                                        here for you
+                                        through difficult times.
+                                        Against this background, Thapar Institute Counselling cell (TICC) was set up in
+                                        January 2016.
+                                        TICC has formed in accordance with UGC norms to provide free counselling to students
+                                        and staff to
+                                        help them in performing better in their lives.
+                                    </div>
+                                </div>
+        
+        
+        
+                                <div class="carousel-item container-fluid">
+                                    <div class="image">
+                                        <img src="./assets/Garima_mam.png">
+                                        <div class="rectangle">
+                                            <p class="name">Dr.Garima Garg</p>
+                                            <p class="dept">Student Ambassador Head</p>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Sometimes coping with one or more stresses can prove to be overwhelming. TICC is
+                                        here for you
+                                        through difficult times.
+                                        Against this background, Thapar Institute Counselling cell (TICC) was set up in
+                                        January 2016.
+                                        TICC has formed in accordance with UGC norms to provide free counselling to students
+                                        and staff to
+                                        help them in performing better in their lives.
+                                    </div>
+                                </div>
+                                
+                            </div> -->
+                            <!-- garima mam -->
+                        </div>
+                    </div>
+            </section>
+
+
+            <!-- <section>
                 <div class="backgroundBox">
 
                     <div id="carousel2" class="carousel slide slider2" data-bs-ride="false">
                         <div class="carousel-inner">
 
-                            <!-- FIRSt item -->
-                            <div class="carousel-item active">
+                            FIRSt item
+                            <div class="flex items-center justify-center flex-wrap gap-4 p-4 carousel-item active">
 
+                                <div class="card">
+                    
+                                    <img src="./assets/Sonam_mam.png" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                    
+                                    <div class="text-gray-900 text-lg font-bold">Dr. Sonam Dullat</div>
+                    
+                                    <div class="text-purple-600">Psychologist and Therapist</div>
+                                    
+                                    <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div>
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                                    
+                                </div>
+                                <div id="carousel1" class="carousel slide slider" data-interval="false">
+                                <div class="card color-black ">
+            
+                                    <img src="./assets/Garima_mam.png" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                                    
+                                    <div class="text-gray-900 text-lg font-bold">Dr. Garima Garg</div>
+                                    <div class="text-purple-600">Ambassador Head</div>
+                                    
+                                    <div class="text-gray-600">Lead engineering teams at Figma, Pitch, and Protocol Labs.</div>
+                                    
+                                    <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </div>
+                    
+                                </div>
+                            </div> <br>
+                            <div class="carousel-item ">
+                                <div class="flex items-center justify-center flex-wrap gap-4 p-4 carousel-item active">
+
+                                    <div class="card">
+                        
+                                        <img src="./assets/Sonam_mam.png" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+                        
+                                        <div class="text-gray-900 text-lg font-bold">Dr. Sonam Dullat</div>
+                        
+                                        <div class="text-purple-600">Psychologist and Therapist</div>
+                                        
+                                        <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div>
+                                        
+                                        <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                                            <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                            <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                            <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        </div>
+                        
+                                    </div>
+                            <div class="carousel-item active">
+                                
                                 <div class="divlead"><img class=" ambImageslead firstimglead"
                                         src="assets/Aashutosh.png">
-                                    <div class="ambRect rect1lead">
-                                        <p class="ambName"> Aashutosh Dubey</p>
-                                        <p class="ambDesc">Lead</p>
+                                        <div class="ambRect rect1lead">
+                                            <p class="ambName"> Aashutosh Dubey</p>
+                                            <p class="ambDesc">Lead</p>
+                                        </div>
+                                        
+                                        <div class="ambtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Dicta Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eos.
+                                        </div>
                                     </div>
-
-                                    <div class="ambtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Dicta Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eos.
-                                    </div>
-                                </div>
 
                                 <div class="divlead"><img class=" ambImageslead secondimglead" src="assets/gurleen.png">
                                     <div class="ambRect rect2lead">
@@ -160,11 +640,10 @@
                                     </div>
                                 </div>
 
-                            </div>
+                            </div> 
 
 
-                            <!-- next -->
-                            <div class="carousel-item ">
+                            
                                 <div class="divs"><img class=" ambImages firstimg" src="assets/Maanya.png">
                                     <div class="ambRect rect1">
                                         <p class="ambName">Maanya Duggal</p>
@@ -195,7 +674,7 @@
                             </div>
 
 
-                            <!-- next -->
+                            next
                             <div class="carousel-item container-fluid">
                                 <div class="divs"><img class=" ambImages firstimg" src="assets/Pranathi_RNA.png">
                                     <div class="ambRect rect1">
@@ -227,7 +706,7 @@
 
                             </div>
 
-                            <!-- next -->
+                          
                             <div class="carousel-item container-fluid">
                                 <div class="divs"><img class=" ambImages firstimg" src="assets/RudhirPratap.png">
                                     <div class="ambRect rect1">
@@ -254,20 +733,20 @@
 
                             </div>
 
-                        </div>
+                   </div>
                     </div>
 
 
-            </section>
+            </section> -->
 
 
-            <!-- button -->
-            <a class="carousel-control-prev" href="#carousel2" role="button" data-bs-slide="prev">
+        
+            <!-- <a class="carousel-control-prev" href="#carousel2" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
             <a class="carousel-control-next" href="#carousel2" role="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
-            </a>
+            </a> -->
 
 
         </div>
