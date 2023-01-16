@@ -75,17 +75,16 @@ nav{
     flex-wrap: wrap;
     justify-content: space-around;
     top: 0;
-    height: 150px;
+    height: 100px;
     width: 100vw;
 }
 
  .topnav{
     overflow: hidden;
 } 
-.topnav a:active{
+/* .topnav a:active{
 border-bottom:#54BAB9 2px solid;
-
-}
+} */
 .topnav .icon{
     display: none;
 }
@@ -101,10 +100,10 @@ border-bottom:#54BAB9 2px solid;
     align-items: center;
     justify-content: space-between;
     background: none;
-    top: 0;
-    height: 100px;
 }
-
+ .nav-bar ul {
+    height: 25px;
+} 
 .nav-bar ul li{
     display: inline;
 }
@@ -112,6 +111,10 @@ border-bottom:#54BAB9 2px solid;
 .nav-bar ul a{
     padding: 0px;
     margin: 20px;
+} 
+.nav-bar ul a.active{
+    border-bottom: solid 3px #54bab9 ;
+    
 }
 .mainsection{
     display: flex;
@@ -121,7 +124,8 @@ border-bottom:#54BAB9 2px solid;
 
 }
 .main{
-    width: 90vw;
+    background-color: #FBF8F1;
+     width: 90vw; 
     height: auto;
     /* background: #FBF8F1; */
     display: flex;
@@ -175,7 +179,7 @@ border-bottom:#54BAB9 2px solid;
 #ticc-logo{
     position: absolute;
     right: 24px;
-    top: 240px; /*24vh*/
+    top: 220px; /*24vh*/
     width: 20em;
 }
 
@@ -192,7 +196,7 @@ border-bottom:#54BAB9 2px solid;
 footer{
     color: #555555;
     text-align: center;
-    background: #FBF8F1;
+    /* background: #FBF8F1; */
     
 }
 
@@ -403,7 +407,11 @@ input[type = submit] {
     width: 30vw;
     overflow-x: hidden;
 }
-
+@media screen and (min-width: 950px){
+.sidebar{
+    visibility: hidden;
+}
+}
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 950px){
@@ -418,9 +426,10 @@ input[type = submit] {
         display: block;
         text-align: left;
     }
-}
+    .nav-bar ul {
+        height: auto;
+    } 
 
-@media screen and (max-width: 950px){
     .topnav a{
         display: none;
     }
@@ -428,6 +437,59 @@ input[type = submit] {
         float: right;
         display: block;
     }
+
+/*test*/
+
+/* The sidebar menu */
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color:#77c0bf; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s;
+  }
+  .sidebar-top {
+    height: 65px;
+    margin-top: -60px;
+    margin-bottom: 10px;
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    transition: 0.5s; 
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:#eee;
+    display: block;
+    transition: 0.3s;
+    text-transform: capitalize;
+    line-height: 40px;
+  }
+  .sidebar a.active{
+    color: #3b3b3b;
+    border-left: solid 3px #3b3b3b;
+    margin-left: 8px;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+
+/*test*/
+
 }
 
 /* 1400 px*/
@@ -456,14 +518,14 @@ input[type = submit] {
 #ticc-insta-handle{
     position: absolute;
     right: 88px;
-    top: 530px; /*60vh;*/
+    top: 510px; /*60vh;*/
     width: 17em;
 }
 
 #ticc-logo{
     position: absolute;
     right:18px;
-    top: 240px; /*24vh*/
+    top: 190px; /*24vh*/
     width: 20em;
 }
 footer p{
@@ -510,14 +572,14 @@ button{
 #ticc-insta-handle{
     position: absolute;
     right: 88px;
-    top: 510px; /*60vh;*/
+    top: 470px; /*60vh;*/
     width: 15em;
 }
 
 #ticc-logo{
     position: absolute;
     right:18px;
-    top: 220px; /*24vh*/
+    top: 170px; /*24vh*/
     width: 20em;
 }
     footer p{
@@ -559,14 +621,14 @@ button{
 #ticc-insta-handle{
     position: absolute;
     right: 88px;
-    top: 470px; /*60vh;*/
+    top: 440px; /*60vh;*/
     width: 13em;
 }
 
 #ticc-logo{
     position: absolute;
     right:10px;
-    top: 220px; /*24vh*/
+    top: 180px; /*24vh*/
     width: 19em;
 }
     footer p{
@@ -609,18 +671,18 @@ button{
         height: auto;
         border-radius: 50%;
     }
-           
+
 #ticc-insta-handle{
     position: absolute;
     right: 80px;
-    top: 450px; 
+    top: 410px; 
     width: 12em;
 }
 
 #ticc-logo{
     position: absolute;
     right:7px;
-    top: 220px; 
+    top: 180px; 
     width: 17em;
 }
     footer p{
@@ -668,14 +730,14 @@ button{
 #ticc-insta-handle{
     position: absolute;
     right: 80px;
-    top: 430px; 
+    top: 390px; 
     width: 12em;
 }
 
 #ticc-logo{
     position: absolute;
     right:7px;
-    top: 220px; 
+    top: 160px; 
     width: 17em;
 }
     footer p{
@@ -717,14 +779,14 @@ button{
     #ticc-insta-handle{
         position: absolute;
         right: 80px;
-        top: 415px; 
+        top: 360px; 
         width: 10.5em;
     }
 
     #ticc-logo{
         position: absolute;
         right:7px;
-        top: 220px; 
+        top: 160px; 
         width: 17em;
     }
     footer p{
@@ -766,14 +828,14 @@ button{
     #ticc-insta-handle{
         position: absolute;
         right: 80px;
-        top: 395px; 
+        top: 345px; 
         width: 10.5em;
     }
 
     #ticc-logo{
         position: absolute;
         right:7px;
-        top: 220px; 
+        top: 150px; 
         width: 17em;
     }
     footer p{
@@ -820,14 +882,14 @@ button{
     #ticc-insta-handle{
         position: absolute;
         right: 80px;
-        top: 360px; 
+        top: 320px; 
         width: 10.5em;
     }
 
     #ticc-logo{
         position: absolute;
         right:7px;
-        top: 200px; 
+        top: 150px; 
         width: 15em;
     }
     footer p{
@@ -875,14 +937,14 @@ button{
     #ticc-insta-handle{
         position: absolute;
         right: 80px;
-        top: 350px; 
+        top: 300px; 
         width: 6em;
     }
 
     #ticc-logo{
         position: absolute;
         right:30px;
-        top: 200px; 
+        top: 170px; 
         width: 10em;
     }
     footer p{
@@ -905,8 +967,7 @@ button{
     }
     
     }
-
-            /*670px*/
+/* 
 @media screen and (max-width: 700px) {
     
     .main-text h1{
@@ -966,11 +1027,10 @@ button{
     a{
         font-size: 14px;
     }
-}
+} */
 /*650px*/
-@media screen and (max-width: 660px) {
+/* @media screen and (max-width: 660px) {
     .main-text{
-        /* border: black 2px solid; */
         padding: 1em;
     }
     .main-text h1{
@@ -1032,18 +1092,18 @@ button{
     a{
         font-size: 11px;
     }
-}
+} */
 
 
 
-/*580px*/
-@media screen and (max-width: 580px) {
+/*640px*/
+@media screen and (max-width: 660px) {
     .main-text{
         /* border: black 2px solid; */
         padding: 1em;
     }
     .main-text h1{
-        font-size: 24px;
+        font-size: 48px;
     }
     nav{
         
@@ -1053,17 +1113,23 @@ button{
         padding-right: 3.5em;
     }
     
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .main-text span{
-        font-size: 24px;
+        font-size: 48px;
+        justify-content: center;
     }
     
     .main-text p{
         margin: 1em 0em ;
-        font-size: 0.6em;
+        font-size: 1.2em;
     
     }
     #main-pic {
-        width: 7em;
+        width: 18em;
         height: auto;
         border-radius: 50%;
     }
@@ -1073,6 +1139,7 @@ button{
     right: 70px;
     top: 220px; 
     width: 4em;
+    display: none;
 }
 
 #ticc-logo{
@@ -1080,31 +1147,115 @@ button{
     right:15px;
     top: 120px; 
     width: 10em;
+    display: none;
+}
+    .mark{
+        font-size: 2.9em; 
+    }
+    /* button{
+        padding: 4px 10px;
+        gap: 2px;
+        border-radius: 25px;
+    } */
+    .body-button a{
+        font-size: 18px;
+    }
+    
+    a{
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-logo img{
+        height: 50px;
+        margin: 10px;
+        margin-top: 25px;
+    }
+    footer p{
+        font-size: 20px;
+        height: fit-content;
+        margin-top: 10px; 
+        line-height: 200%;
+        padding-bottom: 50px;
+        margin-left: 3em;
+        margin-right:3em;
+    }
+}
+
+
+/*640px*/
+@media screen and (max-width: 470px) {
+    .main-text{
+        /* border: black 2px solid; */
+        padding: 1em;
+    }
+    .main-text h1{
+        font-size: 36px;
+    }
+    nav{
+        
+        height: 100px;
+    }
+    .pics{
+        padding-right: 2.8em;
+    }
+    
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-text span{
+        font-size: 36px;
+        justify-content: center;
+    }
+    
+    .main-text p{
+        margin: 1em 0em ;
+        font-size: 1em;
+    
+    }
+    #main-pic {
+        width: 15em;
+        height: auto;
+        border-radius: 50%;
+    }
+    
+#ticc-insta-handle{
+    position: absolute;
+    right: 70px;
+    top: 220px; 
+    width: 4em;
+    display: none;
+}
+
+#ticc-logo{
+    position: absolute;
+    right:15px;
+    top: 120px; 
+    width: 10em;
+    display: none;
 }
     footer p{
-        font-size: 12px;
+        font-size: 16px;
         height: fit-content;
         margin-top: 10px;
-        margin-left: 5em;
-        margin-right: 5em; 
-        line-height: 280%;
+        margin-left: 2em;
+        margin-right: 2em; 
+        line-height: 200%;
     }
     
     .mark{
         font-size: 2.9em; 
     }
-    button{
-        font-size: smaller;
-        padding: 4px 10px;
-        gap: 2px;
-        border-radius: 25px;
-    }
-    .body-button .a{
-        font-size: 6px;
+    .body-button a{
+        font-size: 15px;
     }
     
     a{
         font-size: 10px;
+        justify-content: center;
+        align-items: center;
     }
     .nav-logo img{
         height: 50px;
@@ -1113,412 +1264,85 @@ button{
     }
 }
 
-/*450px*/
-@media screen and (max-width: 450px) {
+
+
+/*640px*/
+@media screen and (max-width: 350px) {
     .main-text{
         /* border: black 2px solid; */
-        padding: 0.75em;
+        padding: 1em;
+    }
+    .main-text h1{
+        font-size: 30px;
     }
     nav{
         
         height: 100px;
     }
     .pics{
-        padding-right: 2.75em;
-    }
-    .main-text h1{
-        font-size: 18px;
+        padding-right: 2.8em;
     }
     
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .main-text span{
-        font-size: 18px;
+        font-size: 30px;
+        justify-content: center;
     }
     
     .main-text p{
         margin: 1em 0em ;
-        font-size: 0.45em;
+        font-size: 0.75em;
     
     }
     #main-pic {
-        width: 6em;
+        width: 12em;
         height: auto;
         border-radius: 50%;
     }
     
 #ticc-insta-handle{
     position: absolute;
-    right: 50px;
-    top: 200px; 
+    right: 70px;
+    top: 220px; 
     width: 4em;
+    display: none;
 }
 
 #ticc-logo{
     position: absolute;
-    right:12px;
+    right:15px;
     top: 120px; 
-    width: 7em;
+    width: 10em;
+    display: none;
 }
     footer p{
-        font-size: 10px;
+        font-size: 14px;
         height: fit-content;
-        padding-bottom: 50px;
         margin-top: 10px;
-        margin-left: 3.5em;
-        margin-right: 3.5em; 
-        line-height: 280%;
-    }
-    
-    .mark{
-        font-size: 2.9em; 
-    }
-    button{
-        font-size: smaller;
-        padding: 4px 10px;
-        gap: 2px;
-        border-radius: 25px;
-    }
-    .body-button .a{
-        font-size: 6px;
-    }
-    
-    a{
-        font-size: 6px;
-    }
-    .nav-logo img{
-        height: 40px;
-        margin: 10px;
-        margin-top: 23px;
-    }
-    
-}
-
-
-/*375px*/
-@media screen and (max-width: 376px) {
-    .main-text{
-        /* border: black 2px solid; */
-        padding: 0.25em;
-    }
-    nav{
-        
-        height: 100px;
-    }
-    
-    .main-text h1{
-        font-size: 18px;
-    }
-    
-    .main-text span{
-        font-size: 18px;
-    }
-    
-    .main-text p{
-        margin: 1em 0em ;
-        font-size: 0.45em;
-    
-    }
-    #main-pic {
-        width: 6em;
-        height: auto;
-        border-radius: 50%;
-    }
-    
-#ticc-insta-handle{
-    position: absolute;
-    right: 20px;
-    top: 180px; 
-    width: 4em;
-}
-
-#ticc-logo{
-    position: absolute;
-    right:-20px;
-    top: 100px; 
-    width: 7em;
-}
-    footer p{
-        font-size: 10px;
-        height: fit-content;
-        margin-top: 10px; 
+        margin-left: 2em;
+        margin-right: 2em; 
         line-height: 200%;
-        padding-bottom: 50px;
-        margin-left: 3em;
-        margin-right:3em;
     }
     
     .mark{
         font-size: 2.9em; 
     }
-    button{
-        font-size: smaller;
-        padding: 4px 10px;
-        gap: 2px;
-        border-radius: 25px;
-    }
-    .body-button .a{
-        font-size: 6px;
+    .body-button a{
+        font-size: 12px;
     }
     
     a{
-        font-size: 6px;
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
     }
     .nav-logo img{
         height: 40px;
         margin: 10px;
-        margin-top: 23px;
-    }
-    .pics{
-        padding-right: 1em;
+        margin-top: 25px;
     }
 }
-
-
-/*300px*/
-@media screen and (max-width: 300px) {
-    .main-text{
-        /* border: black 2px solid; */
-        padding: 0.25em;
-    }
-    .main-text h1{
-        font-size: 14px;
-    }
-    nav{
-        
-        height: 100px;
-    }
-    
-    .main-text span{
-        font-size: 14px;
-    }
-    
-    .main-text p{
-        margin: 1em 0em ;
-        font-size: 0.25em;
-    
-    }
-    #main-pic {
-        width: 4em;
-        height: auto;
-        border-radius: 50%;
-    }
-        
-    #ticc-insta-handle{
-        position: absolute;
-        right: 10px;
-        top: 165px; 
-        width: 3em;
-    }
-
-    #ticc-logo{
-        position: absolute;
-        right:-10px;
-        top: 115px; 
-        width: 5em;
-    }
-    footer p{
-        font-size: 8px;
-        height: fit-content;
-        margin-top: 10px; 
-        line-height: 150%;
-        padding-bottom: 50px;
-        margin-left: 3em;
-        margin-right:3em;
-    }
-    
-    .mark{
-        font-size: 2.9em; 
-    }
-    button{
-        font-size: smaller;
-        padding: 4px 10px;
-        gap: 2px;
-        border-radius: 25px;
-    }
-    .body-button .a{
-        font-size: 6px;
-    }
-    
-    a{
-        font-size: 6px;
-    }
-    .nav-logo img{
-        height: 25px;
-        margin: 10px;
-        margin-top: 37px;
-    }
-    .pics{
-        padding-right: 1em;
-    }
-    .nav-button{
-        font-size: 12px;
-    }
-    
-}
-
-/*240px*/
-@media screen and (max-width: 240px) {
-    .main-text{
-        /* border: black 2px solid; */
-        padding: 0.25em;
-    }
-    .main-text h1{
-        font-size: 14px;
-    }
-    
-    .main-text span{
-        font-size: 14px;
-    }
-    
-    .main-text p{
-        margin: 1em 0em ;
-        font-size: 0.25em;
-    
-    }
-    #main-pic {
-        width: 4em;
-        height: auto;
-        border-radius: 50%;
-    }
-        
-    #ticc-insta-handle{
-        position: absolute;
-        right: 10px;
-        top: 165px; 
-        width: 3em;
-    }
-
-    #ticc-logo{
-        position: absolute;
-        right:-10px;
-        top: 115px; 
-        width: 5em;
-    }
-    footer p{
-        font-size: 8px;
-        height: fit-content;
-        margin-top: 10px; 
-        line-height: 150%;
-        padding-bottom: 50px;
-        margin-left: 3em;
-        margin-right:3em;
-    }
-    
-    .mark{
-        font-size: 2.9em; 
-    }
-    button{
-        font-size: smaller;
-        padding: 4px 10px;
-        gap: 2px;
-        border-radius: 25px;
-    }
-    .body-button .a{
-        font-size: 6px;
-    }
-    
-    a{
-        font-size: 6px;
-    }
-    .nav-logo img{
-        height: 25px;
-        margin: 10px;
-        margin-top: 37px;
-    }
-    .pics{
-        padding-right: 1em;
-    }
-    .nav-button{
-        font-size: 12px;
-    }
-    nav{
-        
-        height: 100px;
-    }
-    
-}
-
-
-/*240px*/
-@media screen and (max-width: 230px) {
-    .main-text{
-        /* border: black 2px solid; */
-        padding: 0.25em;
-    }
-    .main-text h1{
-        font-size: 8px;
-    }
-    
-    .main-text span{
-        font-size: 8px;
-    }
-    
-    .main-text p{
-        margin: 0.5em 0em ;
-        font-size: 4px;
-    
-    }
-    #main-pic {
-        width: 2em;
-        height: auto;
-        border-radius: 50%;
-    }
-        
-    #ticc-insta-handle{
-        position: absolute;
-        right: 10px;
-        top: 105px; 
-        width: 1.5em;
-    }
-
-    #ticc-logo{
-        position: absolute;
-        right:0px;
-        top: 80px; 
-        width: 2.5em;
-    }
-    footer p{
-        font-size: 6px;
-        height: fit-content;
-        margin-top: 5px; 
-        line-height: 100%;
-        padding-bottom: 25px;
-        margin-left: 1em;
-        margin-right:1em;
-    }
-    
-    .mark{
-        font-size: 2em; 
-    }
-    button{
-        font-size: smaller;
-        padding: 4px 10px;
-        gap: 2px;
-        border-radius: 25px;
-    }
-    .body-button .a{
-        font-size: 4px;
-    }
-    
-    a{
-        font-size: 4px;
-    }
-    .nav-logo img{
-        height: 15px;
-        margin: 10px;
-        margin-top: 37px;
-    }
-    .pics{
-        padding-right: 0.5em;
-    }
-    .nav-button{
-        font-size: 4px;
-    }
-    nav{
-        
-        height: 60px;
-    }
-    
-}
-
-
-

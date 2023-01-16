@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Custom CSS-->
+    <link rel="stylesheet" href="nav.css" />
     <!-- <link rel="stylesheet" href="styles.css"> -->
 
     <!--Tailwind CSS-->
@@ -42,42 +43,45 @@
 
 <body>
     <nav class="topnav" id="topNav">
-        <div class="nav-logo">
-            <img src="assets/image.png" alt="" srcset="">
-        </div>
-        <div class="nav-bar">
-            <ul>
-                <a href="index.html">
-                    <li>home</li>
-                </a>
-                <a href="about.html">
-                    <li>About</li>
-                </a>
-                <a href="how-it-works.html">
-                    <li>How it Works</li>
-                </a>
-                <a href="our-team.html">
-                    <li>Our Team</li>
-                </a>
-                <a href="Contact-Us.html">
-                    <li>Contact us</li>
-                </a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <li><i class="fa fa-bars"></i></li>
-                </a>
-            </ul>
-        </div>
-        <div class="nav-button">
-            <a href="https://bit.ly/tietticc"></a><button>Book a Session</button>
-        </div>
-    </nav>
+            <div class="nav-logo">
+                <img src="assets/image.png" alt="" srcset="">
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <a href="index.html">
+                        <li >home</li>
+                    </a>
+                    <a href="about.html">
+                        <li>About</li>
+                    </a>
+                    <a href="how-it-works.html">
+                        <li>How it Works</li>
+                    </a>
+                    <a class = 'active' href="our-team.html">
+                        <li>Our Team</li>
+                    </a>
+                    <a href="Contact-Us.html">
+                        <li>Contact us</li>
+                    </a>
+                    
+                      
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <li><i class="fa-solid fa-bars"></i></li>
+                        
+                    </a>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <a href="https://bit.ly/tietticc"></a><button>Book a Session</button>
+            </div>
+        </nav>
     <div class="container mx-auto py-8">
 
         
         <div class="navigations">
             <div id="our-counc">OUR COUNSELLORS</div>
             <div id="counsellors">
-                <div class="flex flex-col text-center gap-4 mb-8 p-4">
+                <div class="flex flex-col text-center gap-20 mb-8 p-4">
         
                     <!-- <div class="text-purple-600 text-sm font-bold">Our team</div> -->
         
@@ -105,9 +109,14 @@
                         <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                         
                         <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                            <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                            <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                            <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                            <a href="mailto:sonam.dullat@thapar.edu">
+                                <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                            </a>
+                            <a href="tel:+918872739998">
+
+                                <i class="fa fa-phone fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                            </a>
+                            <!-- <i cxlass="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
                         </div>
         
                     </div>
@@ -122,9 +131,14 @@
                         <!-- <div class="text-gray-600">Lead engineering teams at Figma, Pitch, and Protocol Labs.</div> -->
                         
                         <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                            <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                            <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                            <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                            <a href="mailto:garima.garg@thapar.edu">
+                                <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                            </a>
+                            <a href="tel:+919781700762">
+
+                                <i class="fa fa-phone fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                            </a>
+                            <!-- <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
                         </div>
         
                     </div>
@@ -210,7 +224,7 @@
 
         <div id="stu-amb">STUDENT AMBASSADORS</div>
         <div id="ambassadors" class="toggle">
-            <div class="flex flex-col text-center gap-4 mb-8 p-4">
+            <div class="flex flex-col text-center gap-20 mb-8 p-4">
             <div class="text-gray-900 text-3xl md:text-4xl font-bold"></div>
         
                     <div class="text-gray-600 md:text-lg"> Student Ambassadors of TICC are responsible for
@@ -240,13 +254,22 @@
                                 <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                                 
                                 <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                    <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                    <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    <a href="mailto:adubey3_b20@thapar.edu">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="https://www.linkedin.com/in/aashutosh-dubey/">
+
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/aashutoshdubey0/">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                 </div>
                 
                             </div>
-                        <!-- <div id="carousel1" class="carousel slide slider" data-interval="false"> -->
+                           <!-- <div id="carousel1" class="carousel slide slider" data-interval="false"> -->
                             <div class="card color-black ">
         
                                 <img src="./assets/heads/Gurleen.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
@@ -257,9 +280,18 @@
                                 <!-- <div class="text-gray-600">Lead engineering teams at Figma, Pitch, and Protocol Labs.</div> -->
                                 
                                 <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                    <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                    <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    <a href="mailto:gbajwa_be20@thapar.edu">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="https://www.linkedin.com/in/gurleen-bajwa-200794218/">
+
+                                        <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/_gb2006/">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                 </div>
                 
                             </div> 
@@ -278,9 +310,18 @@
                                     <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                                     
                                     <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <a href="mailto:agarg2_be21@thapar.edu">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="https://www.linkedin.com/in/theabhinavgarg/">
+
                                         <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/theabhinavgarg/">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                     </div>
                     
                                 </div>
@@ -296,9 +337,18 @@
                                     <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                                     
                                     <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <a href="mailto:mduggal_be20@thapar.edu">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="https://www.linkedin.com/in/maanya-duggal-828067210/">
+
                                         <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/maanyaduggal_/">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                     </div>
                     
                                 </div>
@@ -315,9 +365,18 @@
                                     <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                                     
                                     <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <a href="mailto:saggarwal_be21@thapar.edu ">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="https://www.linkedin.com/in/saranya-aggarwal-a12328227/">
+
                                         <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/nachodamsel/">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                     </div>
                     
                                 </div>
@@ -334,9 +393,18 @@
                                     <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                                     
                                     <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <a href="mailto:asharma_blas20@thapar.edu">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="https://www.linkedin.com/in/aenika-sharma-020a15238/">
+
                                         <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/aenika_sharma/">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                     </div>
                     
                                 </div>
@@ -353,9 +421,18 @@
                                     <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                                     
                                     <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <a href="mailto:skaur6_be21@thapar.edu">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="#">
+
                                         <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="#">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                     </div>
                     
                                 </div>
@@ -365,16 +442,25 @@
                     
                                     <img src="./assets/heads/Pranathi.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
                     
-                                    <div class="text-gray-900 text-lg font-bold">  Pranathi</div>
+                                    <div class="text-gray-900 text-lg font-bold">  Pranathi Mehra</div>
                     
                                     <div class="text-purple-600">Research and Advocacy Head</div>
                                     
                                     <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                                     
                                     <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <a href="mailto:pmehra_be20@thapar.edu">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="https://www.linkedin.com/in/pranathi-mehra-9329a8212/">
+
                                         <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="#">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                     </div>
                     
                                 </div>
@@ -391,9 +477,18 @@
                                     <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                                     
                                     <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <a href="mailto:nsehgal_be21@thapar.edu">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="https://www.linkedin.com/in/nitin-sehgal-010955232/">
+
                                         <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/nitinsehgal26/">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                     </div>
                     
                                 </div>
@@ -410,9 +505,18 @@
                                     <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                                     
                                     <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <a href="mailto:ulomesh_be21@thapar.edu">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="https://www.linkedin.com/in/uday-lomesh-481340235/">
+
                                         <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/uday_lomesh/">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                     </div>
                     
                                 </div>
@@ -430,9 +534,18 @@
                                     <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                                     
                                     <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <a href="mailto:abhardwaj2_be21@thapar.edu">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="https://www.linkedin.com/in/adamay-bhardwaj-81a813227/">
+
                                         <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/adymoss13/">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                     </div>
                     
                                 </div>
@@ -449,9 +562,18 @@
                                     <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                                     
                                     <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <a href="mailto:rsingh2_be21@thapar.edu">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="#">
+
                                         <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/rudhirpratapsingh/">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                     </div>
                     
                                 </div>
@@ -468,9 +590,18 @@
                                     <!-- <div class="text-gray-600">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</div> -->
                                     
                                     <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
-                                        <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                        <a href="mailto:msondh_bemba20@thapar.edu">
+                                        <i class=" fa-solid fa-envelope fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <!-- <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i> -->
+                                    <a href="#">
+
                                         <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
-                                        <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/_mannan_sondh_/">
+
+                                        <i class="fa-brands fa-instagram fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                                    </a>
                                     </div>
                     
                                 </div>
@@ -757,6 +888,32 @@
         <div class="footer-img">
             <img src="/assets/ticc-logo.jpg" alt="">
         </div>
+        <div id="mySidebar" class="sidebar">
+            <div class="sidebar-top"></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+               <i class="fa-solid fa-xmark"></i>
+            </a>
+        
+                <a  href="index.html">
+                    home
+                </a>
+                <a href="about.html">
+                    About
+                </a>
+                <a href="how-it-works.html">
+                    How it Works
+                </a>
+                <a class = 'active' href="our-team.html">
+                    Our Team
+                </a>
+                <a href="Contact-Us.html">
+                Contact us
+                </a>
+          </div>
+        </div>
+        
+        <script src="https://kit.fontawesome.com/4b5d41d438.js" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
         <script src="ourteam.js"></script>
     </div>
 </body>
