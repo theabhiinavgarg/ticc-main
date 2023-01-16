@@ -6,6 +6,18 @@
   
 }
 
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px 20px;
+    gap: 10px;
+    background: #54bab9;
+    border-radius: 35px;
+    border-width: 0;
+    color: #ffffff;
+}
+
 nav{
     display: flex;
     flex-wrap: wrap;
