@@ -14,5 +14,10 @@ function showAmb(){
     document.getElementById("stu-amb").classList.add("underline");
     document.getElementById("our-counc").classList.remove("underline");
 }
-
-
+document.getElementById("all-amb").addEventListener('click',showAllAmb);
+function showAllAmb(){
+    document.getElementById("counsellors").classList.add("toggle");
+    document.getElementById("ambassadors").classList.remove("toggle");
+    document.getElementById("stu-amb").classList.add("underline");
+    document.getElementById("our-counc").classList.remove("underline");
+}
