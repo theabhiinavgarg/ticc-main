@@ -33,7 +33,3 @@ function showStuAmb(){
     document.getElementById("our-counc").classList.remove("underline");
 }
 
-
-
-
-

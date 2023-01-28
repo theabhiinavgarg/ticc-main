@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 * {
   margin: 0;
   padding: 0;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 a {
@@ -31,6 +35,20 @@ html {
   font-family: "Lato", sans-serif;
 }
 
+html::-webkit-scrollbar{
+  width: .5rem;
+  height: 0.5rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: rgb(237, 189, 189);
+  border-radius: .5rem;
+}
+
 body {
   background: #ffffff;
 }
@@ -45,11 +63,12 @@ button {
   border-radius: 35px;
   border-width: 0;
   color: #ffffff;
+  text-decoration: underline;
 }
 
 .nav-button {
   display: flex;
-  height: 10vh;
+  height: 8.5vh;
   align-items: center;
   justify-content: center;
 }
@@ -284,10 +303,14 @@ footer p {
   margin-right: auto;
 }
 
-.footer-img {
-  position: absolute;
-  right: 5vw;
-  bottom: 5vh;
+.footer-img{
+  position: ;
+  bottom: 10px;
+}
+
+.footer-img img{
+  position: sticky;
+  bottom: 10px;
 }
 
 /* .HIW-img1 {
@@ -538,17 +561,22 @@ input[type="submit"] {
   overflow-x: hidden;
 }
 
-/* .contact-us-section {} */
 
-/* our-team section start */
 
-.logoCounc {
-  position: absolute;
-  width: 194px;
-  height: 35px;
-  right: 5%;
-  top: 25%;
-}
+
+ .logoCounc {
+    position: relative;
+    width: 194px;
+    height: 35px;
+    right: 5%;
+    top: 20%;
+  }
+  
+   .imhIllu img{
+    position: absolute;
+    top: 45px;
+    height: 35px;
+  }
 
 .arrow {
   position: absolute;
@@ -620,6 +648,11 @@ input[type="submit"] {
   padding-left: 6%;
 }
 
+
+#counsellors{
+  font-family: 'Varela Round', sans-serif;
+}
+  
 
 
 /* @media only screen and (max-width: 800px) {
@@ -913,6 +946,7 @@ input[type="submit"] {
   top: 88.5%;
 }
 
+
 button {
   display: flex;
   flex-direction: row;
@@ -923,6 +957,7 @@ button {
   border-radius: 35px;
   border-width: 0;
   color: #ffffff;
+
 }
 
 .ambName {

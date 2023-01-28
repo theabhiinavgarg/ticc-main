@@ -35,7 +35,6 @@ html{
     scroll-behavior: smooth;
     scroll-behavior: normal;
     font-family: 'Lato', sans-serif;
-    
 }
 
 body{
@@ -121,18 +120,17 @@ border-bottom:#54BAB9 2px solid;
     justify-content: center;
     align-items: center;
     width: 100vw;
-
 }
 .main{
     background-color: #FBF8F1;
      width: 90vw; 
-    height: auto;
     /* background: #FBF8F1; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* border: black 10px solid; */
     border-radius: 0.8em;
+    height: 65vh;
 }
 
 .main-text{
@@ -174,6 +172,13 @@ border-bottom:#54BAB9 2px solid;
     right: 84px;
     top: 560px; /*60vh;*/
     width: 17em;
+}
+
+#hover-img{
+    position: absolute;
+    top: 7em;
+    right: 41em;
+    height: 10em;
 }
 
 #ticc-logo{
@@ -240,7 +245,7 @@ footer p{
     font-size: 1.9em;
     word-spacing: 0.2em;
     margin-top: 4vh;
-    text-align: left;
+    text-align: right;
 }
 
 .Services{
