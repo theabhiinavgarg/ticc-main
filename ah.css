@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
   margin: 0;
@@ -41,7 +42,7 @@ button {
   align-items: flex-start;
   padding: 14px 20px;
   gap: 10px;
-  background: #54bab9;
+  background: #1A7D60;
   border-radius: 35px;
   border-width: 0;
   color: #ffffff;
@@ -256,6 +257,7 @@ footer p {
   word-spacing: 0.2em;
   margin-top: 4vh;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .Services {
@@ -317,6 +319,7 @@ footer p {
   position: relative;
   text-align: center;
   font-size: xx-large;
+  font-family: 'Poppins', sans-serif;
   color: #555555;
 }
 
@@ -458,7 +461,7 @@ footer p {
 }
 
 .color-W {
-  color: #54bab9;
+  color: #1A7D60;
   font-size: 4.5em;
   font-weight: 600;
   letter-spacing: 0.1em;
