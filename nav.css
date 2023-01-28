@@ -63,6 +63,19 @@ nav{
     
 }
 
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color:#77c0bf; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s;
+  }
+
 @media screen and (max-width: 950px){
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
