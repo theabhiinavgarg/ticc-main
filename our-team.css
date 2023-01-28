@@ -304,7 +304,7 @@ footer p {
 }
 
 .footer-img{
-  position: ;
+  position: sticky;
   bottom: 10px;
 }
 
