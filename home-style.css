@@ -230,6 +230,7 @@ border-bottom:#54BAB9 2px solid;
     /* border: black 10px solid; */
     border-radius: 0.8em;
     height: 65vh;
+    overflow: hidden;
 }
 
 .main-text{
@@ -1207,7 +1208,7 @@ button{
         padding: 1em;
     }
     .main-text h1{
-        font-size: 48px;
+        font-size: 40px;
     }
     nav{
         
@@ -1223,17 +1224,17 @@ button{
     }
 
     .main-text span{
-        font-size: 48px;
+        font-size: 40px;
         justify-content: center;
     }
     
     .main-text p{
         margin: 1em 0em ;
-        font-size: 1.2em;
+        font-size: 1em;
     
     }
     #main-pic {
-        width: 18em;
+        width: 10em;
         height: auto;
         border-radius: 50%;
     }
@@ -1287,19 +1288,22 @@ button{
 }
 
 
-/*640px*/
+/*470px*/
 @media screen and (max-width: 470px) {
     .main-text{
         /* border: black 2px solid; */
         padding: 1em;
     }
+
     .main-text h1{
         font-size: 36px;
     }
+
     nav{
         
         height: 100px;
     }
+    
     .pics{
         padding-right: 2.8em;
     }
@@ -1307,6 +1311,7 @@ button{
     .main {
         flex-direction: column;
         justify-content: center;
+        margin: -3em;
     }
 
     .main-text span{
@@ -1320,7 +1325,7 @@ button{
     
     }
     #main-pic {
-        width: 15em;
+        width: 9em;
         height: auto;
         border-radius: 50%;
     }
@@ -1368,7 +1373,89 @@ button{
     }
 }
 
+@media screen and (max-width: 380px) {
+    .main-text{
+        /* border: black 2px solid; */
+        padding: 1em;
+    }
 
+    .main-text h1{
+        font-size: 36px;
+    }
+
+    nav{
+        
+        height: 100px;
+    }
+    
+    .pics{
+        padding-right: 2.8em;
+    }
+    
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        margin: 1em;
+    }
+
+    .main-text span{
+        font-size: 36px;
+        justify-content: center;
+    }
+    
+    .main-text p{
+        margin: 1em 0em ;
+        font-size: 1em;
+    
+    }
+    #main-pic {
+        width: 9em;
+        height: auto;
+        border-radius: 50%;
+    }
+    
+#ticc-insta-handle{
+    position: absolute;
+    right: 70px;
+    top: 220px; 
+    width: 4em;
+    display: none;
+}
+
+#ticc-logo{
+    position: absolute;
+    right:15px;
+    top: 120px; 
+    width: 10em;
+    display: none;
+}
+    footer p{
+        font-size: 16px;
+        height: fit-content;
+        margin-top: 10px;
+        margin-left: 2em;
+        margin-right: 2em; 
+        line-height: 200%;
+    }
+    
+    .mark{
+        font-size: 2.9em; 
+    }
+    .body-button a{
+        font-size: 15px;
+    }
+    
+    a{
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-logo img{
+        height: 50px;
+        margin: 10px;
+        margin-top: 25px;
+    }
+}
 
 /*640px*/
 @media screen and (max-width: 350px) {
@@ -1403,7 +1490,89 @@ button{
     
     }
     #main-pic {
-        width: 12em;
+        width: 9em;
+        height: auto;
+        border-radius: 50%;
+    }
+    
+#ticc-insta-handle{
+    position: absolute;
+    right: 70px;
+    top: 220px; 
+    width: 4em;
+    display: none;
+}
+
+#ticc-logo{
+    position: absolute;
+    right:15px;
+    top: 120px; 
+    width: 10em;
+    display: none;
+}
+    footer p{
+        font-size: 14px;
+        height: fit-content;
+        margin-top: 10px;
+        margin-left: 2em;
+        margin-right: 2em; 
+        line-height: 200%;
+    }
+    
+    .mark{
+        font-size: 2.9em; 
+    }
+    .body-button a{
+        font-size: 12px;
+    }
+    
+    a{
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-logo img{
+        height: 40px;
+        margin: 10px;
+        margin-top: 25px;
+    }
+}
+
+/* Galaxy Fold 280 */
+
+@media screen and (max-width: 281px) {
+    .main-text{
+        /* border: black 2px solid; */
+        padding: 1em;
+    }
+    .main-text h1{
+        font-size: 30px;
+    }
+    nav{
+        height: 100px;
+    }
+
+    .pics{
+        padding-right: 2.8em;
+    }
+    
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-text span{
+        font-size: 28px;
+        justify-content: center;
+    }
+    
+    .main-text p{
+        margin: 1em 0em ;
+        font-size: 0.55em;
+    
+    }
+    #main-pic {
+        width: 6em;
         height: auto;
         border-radius: 50%;
     }
