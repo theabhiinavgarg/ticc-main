@@ -177,6 +177,11 @@ nav{
     width: 100vw;
 }
 
+.quote{
+    text-align: center;
+    margin-top: 2em;
+}
+
  .topnav{
     overflow: hidden;
 } 
@@ -317,7 +322,7 @@ footer p{
 }
 
 .mark{
-    font-size: 4em;
+    font-size: 8em;
     color: #9ED2C6; 
 }
 
@@ -748,6 +753,7 @@ button{
     .mark{
         font-size: 3em; 
     }
+
     button{
         padding: 12px 18px;
         gap: 2px;
@@ -802,6 +808,7 @@ button{
     .mark{
         font-size: 2.9em; 
     }
+    
     button{
         padding: 10px 16px;
         gap: 2px;
