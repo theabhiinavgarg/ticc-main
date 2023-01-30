@@ -171,6 +171,7 @@ nav {
 }
 
 @media screen and (max-width: 950px) {
+
   .HIW-signs {
     flex-direction: column;
   }
@@ -351,6 +352,13 @@ footer p {
 /* Media Query for Tablets, Large Phones */
 
 @media screen and (max-width: 950px) {
+
+  .Main-Section{
+    left: 0;
+    position: relative;
+    right: 0;
+  }
+
   .HIW-signs {
     flex-direction: column;
   }
@@ -379,6 +387,38 @@ footer p {
   }
 
   .nav-button {
+    margin-top: 1em;
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 620px) {
+
+  html{
+    font-size: 55%;
+  }
+
+  .HIW-signs {
+    flex-direction: column;
+  }
+
+  .line {
+    transform: rotate(90deg);
+  }
+
+  .HIW-signs {
+    flex-direction: column;
+  }
+
+  .line {
+    transform: rotate(90deg);
+  }
+
+  .nav-button {
+    margin-top: 1em;
     display: flex;
     height: 5vh;
     align-items: center;
