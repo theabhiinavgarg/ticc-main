@@ -1,0 +1,260 @@
+.Main-sec {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  width: 70vw;
+  /* border: 4px solid #1A7D60; */
+}
+
+.description {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-family: 'Poppins';
+  font-style: normal;
+  letter-spacing: -0.02em;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 28px;
+  color: #0A332E;
+  /* border: 4px solid #1A7D60; */
+}
+
+.color-HI1 {
+  color: #555555;
+  font-size: 2.3em;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.color-W1 {
+  color: #1A7D60;
+  font-size: 2.3em;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+#wdwdcarousel {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* border:3px solid black; */
+  border-radius: 40px;
+  background-color: rgb(237, 225, 227);
+  height: 300px;
+  width: 85%;
+}
+
+.carousel-item {
+  /* width: 500px; */
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  /* border:3px solid black; */
+}
+
+.eve-sec {
+  padding-top: 80px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0px;
+  padding-bottom: 90px;
+}
+
+
+.events-sec {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: auto;
+  padding-top: 50px;
+  padding-left: 60px;
+  /* border: 4px solid #f4770a; */
+}
+
+.events-sec-second {
+  display: flex;
+  flex-direction: column;
+  text-align :right;
+  margin: auto;
+  padding-top: 50px;
+  padding-right: 30px;
+  /* border: 4px solid #ef0fe4; */
+}
+
+.second {
+  padding-left: 60px;
+  width: 50%;
+  /* border: 4px solid #081352; */
+}
+
+.images {
+  padding-right: 30px;
+  width: 50%;
+  /* border: 4px solid #0fefac; */
+}
+
+.imgevents {
+  width: 100%;
+  height: 350px;
+  border-radius: 42px;
+  /* border:3px solid black; */
+}
+
+.description-events {
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-family: 'Poppins';
+  font-style: normal;
+  letter-spacing: -0.02em;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 28px;
+  color: #0A332E;
+  /* border: 4px solid #1A7D60; */
+}
+
+.two{
+  text-align: right;
+}
+
+#last-text {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 50%;
+  font-weight: 700;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+ 
+  .description{
+    letter-spacing: -0.02em;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap; 
+    text-align: center;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+  }
+  .col-6 {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .events-sec  {
+    text-align: center;
+  }
+
+  .description-events{
+    text-align: center;
+  }
+  .events-sec-second  {
+    text-align: center;
+    padding-left: 30px;
+  }
+
+  .second {
+    padding: 30px;
+    margin-left: 10px;
+    width: 100%;
+  }
+  .images {
+    padding: 30px;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .imgevents {
+    width: 90%;
+    text-align: center;
+    height: 350px;
+    margin: auto;
+    /* border : 2px solid #1A7D60; */
+  }
+
+  #last-text{
+    width: 80%;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+ *{
+  text-align: justify;
+ }
+
+ .description{
+  letter-spacing: -0.01em;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: justify;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+ }
+
+ .events-sec  {
+  text-align: center;
+  padding: 20px;
+  /* border: 2px solid #1A7D60; */
+}
+
+.description-events{
+  text-align: justify;
+  padding: 10px;
+}
+.events-sec-second  {
+  text-align: center;
+  padding: 10px;
+  /* border: 2px solid #1A7D60; */
+}
+
+  .col-6 {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  
+  .imgevents {
+    width: 100%;
+    text-align: center;
+    height: 300px;
+    margin:auto;
+    /* border : 2px solid #1A7D60; */
+  }
+
+}
